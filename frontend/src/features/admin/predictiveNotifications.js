@@ -15,21 +15,24 @@ export default function AdminInventoryDashboard() {
     const fetchInventory = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:3500/api/inventory/admin", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const res = await axios.get(
+          "https://techrepairnotessystembackend.onrender.com/api/inventory/admin",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          },
+        );
         setInventory(res.data.data);
         setFilteredInventory(res.data.data);
       } catch (error) {
-         console.error('Error reading admin inventory:', error.message);
-  if (error.response) {
-    console.error('Response data:', error.response.data);
-    console.error('Response status:', error.response.status);
-  } else if (error.request) {
-    console.error('No response received:', error.request);
-  } else {
-    console.error('Error details:', error);
-  }
+        console.error("Error reading admin inventory:", error.message);
+        if (error.response) {
+          console.error("Response data:", error.response.data);
+          console.error("Response status:", error.response.status);
+        } else if (error.request) {
+          console.error("No response received:", error.request);
+        } else {
+          console.error("Error details:", error);
+        }
       }
     };
     fetchInventory();
@@ -40,17 +43,17 @@ export default function AdminInventoryDashboard() {
 
     if (filters.brand)
       data = data.filter((item) =>
-        item.brand.toLowerCase().includes(filters.brand.toLowerCase())
+        item.brand.toLowerCase().includes(filters.brand.toLowerCase()),
       );
 
     if (filters.device)
       data = data.filter((item) =>
-        item.device.toLowerCase().includes(filters.device.toLowerCase())
+        item.device.toLowerCase().includes(filters.device.toLowerCase()),
       );
 
     if (filters.reorder !== "all") {
       data = data.filter((item) =>
-        filters.reorder === "yes" ? item.reorder_alert : !item.reorder_alert
+        filters.reorder === "yes" ? item.reorder_alert : !item.reorder_alert,
       );
     }
 

@@ -66,7 +66,7 @@ mongoose.connection.once("open", () => {
   // Initialize Socket.io
   const io = new Server(server, {
     cors: {
-      origin: "http://localhost:3000", // your React app origin
+      origin: "https://techrepairnotessystemfrontend.onrender.com", // your React app origin
       methods: ["GET", "POST"],
       credentials: true,
     },
