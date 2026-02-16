@@ -1,0 +1,59 @@
+.admin-dashboard {
+  padding: 1.5em;
+  color: #fff;
+}
+
+.admin-title {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2rem;
+  color: #e2e8f0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5em;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: #60a5fa;
+}
+
+.recent-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.admin-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1e40af;
+}

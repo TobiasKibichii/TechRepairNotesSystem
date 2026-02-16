@@ -1,0 +1,111 @@
+.notes-dashboard {
+    padding: 2rem;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.notes-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.notes-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.notes-table th,
+.notes-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.notes-table thead th {
+    background-color: #1f2937;
+    /* dark header */
+    color: #f3f4f6;
+    /* light text */
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.notes-table tbody tr:hover {
+    background-color: blue;
+    /* blue hover */
+    cursor: pointer;
+}
+
+/* --- Status colors --- */
+.status-pending {
+    color: #f59e0b;
+    /* yellow */
+    font-weight: 600;
+}
+
+.status-completed {
+    color: #16a34a;
+    /* green */
+    font-weight: 600;
+}
+
+.status-inprogress {
+    color: #3b82f6;
+    /* blue */
+    font-weight: 600;
+}
+
+/* --- Empty State --- */
+.no-data {
+    text-align: center;
+    padding: 1.5rem;
+    color: #777;
+}
+
+/* --- Modal overrides --- */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #111827;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 5% auto;
+    overflow-y: auto;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.note-image {
+    max-width: 150px;
+    border-radius: 6px;
+}
+
+.status-unknown {
+    color: #9ca3af;
+    /* gray */
+    font-weight: 600;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .notes-title {
+        font-size: 1.25rem;
+    }
+}

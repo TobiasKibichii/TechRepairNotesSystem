@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment / Python env
+triage-env/
+
+env/
+.venv/
+pyenv.config
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs and temp files
+*.tmp
+*.bak
+
+# Pytest cache
+.pytest_cache/
+
+# Hugging Face local model cache (optional)
+# This is usually large and not needed if using HF repo
+# ~/.cache/huggingface/
+
+# Data & backups you don't want on GitHub
+*.csv
+*.pkl

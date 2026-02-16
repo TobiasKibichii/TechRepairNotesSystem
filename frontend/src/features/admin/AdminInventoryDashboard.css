@@ -1,0 +1,98 @@
+/* --- Container --- */
+.inventory-dashboard {
+    padding: 2rem;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.inventory-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Filters --- */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filters select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 0.9rem;
+    transition: border 0.2s ease;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* --- Table --- */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.inventory-table th,
+.inventory-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.inventory-table thead th {
+    background-color: #f8f9fa;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.inventory-table tbody tr:hover {
+    background-color: blue;
+}
+
+/* --- Status Colors --- */
+.alert-row {
+    background-color: blue;
+}
+
+.reorder-yes {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.reorder-ok {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+/* --- Empty State --- */
+.empty-row {
+    text-align: center;
+    padding: 1.5rem;
+    color: #777;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .inventory-title {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,9 @@
+node_modules
+logs
+.env
+
+# Build output / dist folders
+dist/
+build/
+**/build
+**/dist
