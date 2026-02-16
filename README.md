@@ -1,7 +1,25 @@
 <h2>🧩 TechNotes</h2>
 <p><strong>Repair Operations & Workflow Management System</strong></p>
 
-<p><strong>🔎 Overview</strong></p>
+## Demo User Credentials
+
+To try out the app, you can use these test accounts:
+
+### Admin User
+- **username:** admin
+- **Password:** admin123
+
+### Manger User
+- **username:** manager
+- **Password:** manager123
+
+### Employee User
+- **username:** employee
+- **Password:** employee123
+
+> ⚠️ These accounts are for testing/demo purposes only.  
+
+<h2><p><strong>🔎 Overview</strong></p></h2>
 <p>TechNotes is a full-stack web application built to streamline operations in a tech repair shop. It digitizes customer intake, technician assignment, and repair tracking, replacing manual logs with a structured, auditable workflow.</p>
 <p>The system focuses on clarity, accountability, and efficiency—ensuring every device, issue, and action is traceable from intake to resolution.</p>
 
