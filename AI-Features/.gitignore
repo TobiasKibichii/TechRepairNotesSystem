@@ -42,5 +42,4 @@ Thumbs.db
 # ~/.cache/huggingface/
 
 # Data & backups you don't want on GitHub
-*.csv
-*.pkl
+
