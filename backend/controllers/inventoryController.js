@@ -28,9 +28,12 @@ async function getAdminInventory(req, res) {
     }));
 
     // Send ONE request to FastAPI
-    const response = await axios.post("http://localhost:8000/forecast", {
-      parts: partsPayload,
-    });
+    const response = await axios.post(
+      "https://techrepairnotessystembackend.onrender.com/forecast",
+      {
+        parts: partsPayload,
+      },
+    );
 
     const forecasts = response.data.forecasts;
 
