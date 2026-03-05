@@ -27,13 +27,18 @@ async function getAdminInventory(req, res) {
       ),
     }));
 
-    // Send ONE request to FastAPI
     const response = await axios.post(
-      "https://techrepairnotessystembackend.onrender.com/forecast",
-      {
-        parts: partsPayload,
-      },
-    );
+  "https://api-inference.huggingface.co/models/YOUR_USERNAME/YOUR_MODEL",
+  {
+    inputs: partsPayload,
+  },
+  {
+    headers: {
+      Authorization: `Bearer ${process.env.HF_TOKEN}`,
+      "Content-Type": "application/json",
+    },
+  }
+);
 
     const forecasts = response.data.forecasts;
 
