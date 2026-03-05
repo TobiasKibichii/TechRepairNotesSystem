@@ -40,7 +40,7 @@ async function getAdminInventory(req, res) {
   }
 );
 
-    const forecasts = response.data.forecasts;
+    const forecasts = response.data;
 
     // Merge forecasts with CSV data
     const enriched = inventory.map((item) => {
