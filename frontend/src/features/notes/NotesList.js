@@ -30,7 +30,7 @@ const NotesList = () => {
 
   // ✅ Load inventory from backend CSV
   useEffect(() => {
-    fetch("http://localhost:3500/api/inventory/loadStock")
+    fetch("https://techrepairnotessystembackend.onrender.com/api/inventory/loadStock")
       .then((res) => res.json())
       .then((data) => {
         setInventory(data.data);
