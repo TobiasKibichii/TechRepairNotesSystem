@@ -28,7 +28,7 @@ async function getAdminInventory(req, res) {
     }));
 
     const response = await axios.post(
-  "https://api-inference.huggingface.co/models/YOUR_USERNAME/YOUR_MODEL",
+  "https://huggingface.co/evolving8/technotes_model",
   {
     inputs: partsPayload,
   },
